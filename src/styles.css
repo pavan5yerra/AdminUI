@@ -1,0 +1,126 @@
+.App {
+  font-family: sans-serif;
+  left: 10%;
+  width: 80%;
+  position: relative;
+}
+body {
+  background-color: rgb(100, 99, 99);
+}
+.search {
+  background-color: orange;
+  width: 98%;
+  color: rgb(100, 99, 99);
+  font-weight: bolder;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 3px;
+}
+.button {
+  background-color: orange;
+  width: auto;
+  color: rgb(100, 99, 99);
+  font-weight: bolder;
+  border-radius: 8px;
+  padding: 3px;
+  margin: 3px;
+}
+.button-inverse {
+  background-color: rgb(100, 99, 99);
+  width: auto;
+  color: orange;
+  font-weight: bolder;
+  border-radius: 8px;
+  padding: 3px;
+  margin: 3px;
+}
+
+.row-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+  border-radius: 5px;
+  margin: 3px;
+}
+.row-sub-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.row-sub-container > div {
+  overflow: hidden;
+  width: 20%;
+  padding: 8px;
+  color: rgb(100, 99, 99);
+  font-weight: bolder;
+  text-align: center;
+}
+#header {
+  color: rgb(100, 99, 99);
+  font-weight: bolder;
+  text-align: center;
+}
+.header-col {
+  background-color: rgb(39, 38, 35);
+  margin: 2px;
+  border-radius: 5px;
+}
+
+#footer {
+  float: left;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paginationItem {
+  background: orange;
+  border: 2px solid #666;
+  color: rgb(100, 99, 99);
+  font-weight: bolder;
+  padding: 10px 15px;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  position: relative;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.paginationItem span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.prev,
+.next {
+  background: orange;
+  border-radius: 10px;
+  font-weight: bolder;
+  border: none;
+  padding: 10px;
+  color: rgb(100, 99, 99);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.paginationItem.active {
+  border: 1px solid #888;
+  color: #888;
+  pointer-events: none;
+}
+
+.prev.disabled,
+.next.disabled {
+  pointer-events: none;
+  box-shadow: none;
+  color: #999;
+}
